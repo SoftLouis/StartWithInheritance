@@ -7,30 +7,9 @@ using System.Drawing;
 
 namespace StartWithInheritance
 {
-    class Cirkel
+    class Cirkel : Vorm
     {
         const UInt32 MAX_SIZE = 200;
-
-        private static Int32 _aantal = 0;
-        public static Int32 Aantal
-        {
-            get
-            {
-                return _aantal;
-            }
-        }
-        private int _nummer;
-        public int Nummer
-        {
-            get
-            {
-                return _nummer;
-            }
-            private set
-            {
-                _nummer = value;
-            }
-        }
 
         UInt32 _straal;
         public UInt32 Straal
@@ -52,18 +31,15 @@ namespace StartWithInheritance
                 }
             }
         }
-        public Cirkel (UInt32 straal )
+        public Cirkel(UInt32 straal)
         {
-            _aantal++;
-            Nummer = _aantal;
-
             Straal = straal;
         }
 
         public void Paint(Graphics g)
         {
             Pen pen = new Pen(new SolidBrush(Color.Black));
-            g.FillEllipse(new SolidBrush(Color.Yellow), 
+            g.FillEllipse(new SolidBrush(Color.Yellow),
                 Straal, Straal, Straal, Straal);
             g.DrawEllipse(pen, Straal, Straal, Straal, Straal);
 
@@ -74,4 +50,5 @@ namespace StartWithInheritance
             return $"cirkel {Nummer} met straal {Straal}";
         }
     }
+
 }

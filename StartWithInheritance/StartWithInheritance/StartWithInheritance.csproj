@@ -55,6 +55,7 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Vorm.cs" />
     <EmbeddedResource Include="frmVOrmen.resx">
       <DependentUpon>frmVormen.cs</DependentUpon>
     </EmbeddedResource>
