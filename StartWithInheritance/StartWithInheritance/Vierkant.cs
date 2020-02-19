@@ -38,9 +38,9 @@ namespace StartWithInheritance
         public void Paint(Graphics g)
         {
             Pen pen = new Pen(new SolidBrush(Color.Black));
-            g.FillEllipse(new SolidBrush(Color.Yellow), 
+            g.FillRectangle(new SolidBrush(Color.Yellow), 
                 Zijde, Zijde, Zijde, Zijde);
-            g.DrawEllipse(pen, Zijde, Zijde, Zijde, Zijde);
+            g.DrawRectangle(pen, Zijde, Zijde, Zijde, Zijde);
 
         }
 
