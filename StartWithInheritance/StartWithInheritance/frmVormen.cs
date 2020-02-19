@@ -10,10 +10,10 @@ using System.Windows.Forms;
 
 namespace StartWithInheritance
 {
-    Vorm v;
 
     public partial class frmVormen : Form
     {
+        Vorm v;
         public frmVormen()
         {
             InitializeComponent();
